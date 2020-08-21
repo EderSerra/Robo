@@ -12,29 +12,35 @@ public class Robo {
 
     // métodos
     public int desloc(Char desloc) {
+        Coord[] ord;
 
         while ((posVert > 0 && posVert < 11) && posHor > 0 && posHor < 11) {
             if (desloc = "N") {
                 posVert++;
-                return posHor;
-                return posVert;
+                ord[1] = posHor;
+                ord[2] = posVert;
+                return ord;
             } else {
                 if (desloc = "S") {
                     posVert--;
-                    return posHor;
-                    return posVert;
+                    ord[1] = posHor;
+                    ord[2] = posVert;
+                    return ord;
                 } else {
                     if (desloc = "O") {
                         posHor++;
-                        return posHor;
-                        return posVert;
+                        ord[1] = posHor;
+                        ord[2] = posVert;
+                        return ord;
                     } else {
                         if (desloc = "L") {
                             posHor--;
-                            return posHor;
-                            return posVert;
+                            ord[1] = posHor;
+                            ord[2] = posVert;
+                            return ord;
                         } else {
-                            System.out.println("Opção inválida");
+                            ord[1] = 99
+                            ord[2] = 99
                         }
                     }
                 }
